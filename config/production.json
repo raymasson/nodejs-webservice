@@ -1,0 +1,4 @@
+{
+  "MongoDBUrl": "mongodb://production/bookAPI",
+  "PostgreSqlDBUrl": "postgres://postgres:admin@production/authorapi"
+}

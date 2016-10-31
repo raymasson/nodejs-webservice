@@ -1,19 +1,22 @@
 var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
-    Sequelize = require('sequelize');
+    Sequelize = require('sequelize'),
+    config = require('config');
 
 //MongoDB
 var db;
 if (process.env.ENV == 'Test') {
-    db = mongoose.connect('mongodb://localhost/bookAPI_test');
+    if (config.has('MongoDBUrl_Test')) {
+        db = mongoose.connect(config.get('MongoDBUrl_Test'));
+    };
 }
 else {
-    db = mongoose.connect('mongodb://localhost/bookAPI');
+    db = mongoose.connect(config.get('MongoDBUrl'));
 }
 
 //PostgreSQL
-var sequelize = new Sequelize('postgres://postgres:admin@localhost/authorapi');
+var sequelize = new Sequelize(config.get('PostgreSqlDBUrl'));
 
 //Models
 var Book = require('./models/bookModel');
@@ -21,7 +24,7 @@ var Author = require('./models/authorModel')(sequelize);
 
 var server = express();
 
-var port = process.env.PORT || 3000;
+var port = process.env.npm_package_config_port || process.env.PORT || 3000;
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
@@ -38,7 +41,7 @@ server.get('/', function (req, res) {
 });
 
 server.listen(port, function () {
-    console.log("Gulp is running my API on port : " + port);
+    console.log("API running on port : " + port);
 });
 
 module.exports = server;

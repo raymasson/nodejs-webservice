@@ -1,0 +1,4 @@
+{
+  "MongoDBUrl": "mongodb://beta/bookAPI",
+  "PostgreSqlDBUrl": "postgres://postgres:admin@beta/authorapi"
+}

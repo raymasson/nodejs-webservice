@@ -9,7 +9,7 @@ gulp.task('default', function () {
             script: 'server.js',
             ext: 'js',
             env: {
-                PORT: 8000
+                PORT: 5000
             },
             ignore: ['./node_modules/**']
         })
@@ -19,7 +19,7 @@ gulp.task('default', function () {
 });
 
 gulp.task('test', function () {
-    env({ vars: { ENV: 'Test', PORT: 8000 } });
+    env({ vars: { ENV: 'Test', PORT: 5000 } });
     gulp.src('tests/*.js', { read: false })
         .pipe(gulpMocha({ reporter: 'nyan' }));
 });

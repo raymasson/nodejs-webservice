@@ -1,0 +1,5 @@
+{
+  "MongoDBUrl": "mongodb://localhost/bookAPI",
+  "MongoDBUrl_Test": "mongodb://localhost/bookAPI_test",
+  "PostgreSqlDBUrl": "postgres://postgres:admin@localhost/authorapi"
+}

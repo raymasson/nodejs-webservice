@@ -1,0 +1,3 @@
+{
+    "MongoDBUrl": "mongodb://localhost/bookAPI_test"
+}
