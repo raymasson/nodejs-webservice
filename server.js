@@ -5,7 +5,7 @@ var express = require('express'),
     config = require('config');
 
 /*** To debug a module ***/
-var debug = require('debug')('my-namespace');
+//var debug = require('debug')('my-namespace');
 //const name = 'my-app';  
 //debug('booting %s', name);
 
