@@ -1,3 +1,5 @@
+var logger = require("../utils/logger");
+
 var bookController = function (Book) {
     var post = function (req, res) {
         var book = new Book(req.body);
@@ -14,7 +16,6 @@ var bookController = function (Book) {
     };
 
     var get = function (req, res) {
-
         var query = {};
         if (req.query.genre) {
             query.genre = req.query.genre;
@@ -34,6 +35,7 @@ var bookController = function (Book) {
                     newBook.links.self = 'http://' + req.headers.host + '/api/books/' + newBook._id;
                     returnBooks.push(newBook);
                 })
+
                 res.json(returnBooks);
             }
         })
@@ -44,6 +46,11 @@ var bookController = function (Book) {
 
         returnBook.links = {};
         returnBook.links.filterByGenre = 'http://' + req.headers.host + '/api/books/?genre=' + encodeURIComponent(returnBook.genre);
+
+        logger.info('Get a book by id!', {
+            url: req.url,
+            book: returnBook
+        });
 
         res.json(returnBook);
     };

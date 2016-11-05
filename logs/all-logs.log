@@ -1,0 +1,52 @@
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05T09:30:05.157Z"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05T09:30:05.173Z"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05T09:30:05.258Z"}
+{"level":"error","message":"test error","timestamp":"2016-11-05T09:30:05.267Z"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05T09:30:05.267Z"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05T09:30:05.268Z"}
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05T09:31:05.616Z"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05T09:31:05.644Z"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05T09:31:05.765Z"}
+{"level":"error","message":"test error","timestamp":"2016-11-05T09:31:05.781Z"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05T09:31:05.782Z"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05T09:31:05.784Z"}
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05T09:31:18.633Z"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05T09:31:18.682Z"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05T09:31:18.810Z"}
+{"level":"error","message":"test error","timestamp":"2016-11-05T09:31:18.818Z"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05T09:31:18.819Z"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05T09:31:18.820Z"}
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05T09:31:48.472Z"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05T09:31:48.497Z"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05T09:31:48.664Z"}
+{"level":"error","message":"test error","timestamp":"2016-11-05T09:31:48.676Z"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05T09:31:48.676Z"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05T09:31:48.677Z"}
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05T09:32:51.172Z"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05T09:32:51.197Z"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05T09:32:51.331Z"}
+{"level":"error","message":"test error","timestamp":"2016-11-05T09:32:51.346Z"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05T09:32:51.347Z"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05T09:32:51.349Z"}
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05 10:33:05"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05 10:33:05"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05 10:33:05"}
+{"level":"error","message":"test error","timestamp":"2016-11-05 10:33:05"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05 10:33:05"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05 10:33:05"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:36:12"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:36:12"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:36:12"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:36:12"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:36:13"}
+{"level":"info","message":"Connect to MongoDB : mongodb://localhost/bookAPI","timestamp":"2016-11-05 10:38:07"}
+{"level":"info","message":"Configure PostgreSQL : postgres://postgres:admin@localhost/authorapi","timestamp":"2016-11-05 10:38:07"}
+{"level":"info","message":"Configure Routes...","timestamp":"2016-11-05 10:38:07"}
+{"level":"error","message":"test error","timestamp":"2016-11-05 10:38:07"}
+{"level":"warn","message":"test warning","timestamp":"2016-11-05 10:38:07"}
+{"level":"info","message":"API running on port : 5000","timestamp":"2016-11-05 10:38:07"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:38:12"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:38:13"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:38:13"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:38:13"}
+{"url":"/58175e7997c38915bcfd1309","book":{"_id":{"_bsontype":"ObjectID","id":{"0":88,"1":23,"2":94,"3":121,"4":151,"5":195,"6":137,"7":21,"8":188,"9":253,"10":19,"11":9}},"title":"Les misérables","author":"Victor Hugo","genre":"Historical","__v":0,"read":true,"links":{"filterByGenre":"http://localhost:5000/api/books/?genre=Historical"}},"level":"info","message":"Get a book by id!","timestamp":"2016-11-05 10:38:13"}
