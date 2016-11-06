@@ -1,4 +1,7 @@
-var logger = require("../utils/logger");
+var logger = require('../utils/logger'),
+    cache = require('../utils/nodeCache');
+
+var cacheKey = "get_all_books";
 
 var bookController = function (Book) {
     var post = function (req, res) {
@@ -11,34 +14,65 @@ var bookController = function (Book) {
         else {
             book.save();
             res.status(201)
+
+            //Invalidate the cache
+            cache.del(cacheKey, function (err, count) {
+                if (!err) {
+                    logger.debug('The key ' + cacheKey + ' has been deleted from cache');
+                }
+            });
+
+            cache.close();
+
             res.send(book);
         }
     };
 
     var get = function (req, res) {
-        var query = {};
-        if (req.query.genre) {
-            query.genre = req.query.genre;
-        }
-        if (req.query.read) {
-            query.read = req.query.read;
-        }
+        //Get from cache
+        cache.get(cacheKey, function (err, value) {
+            if (!err) {
+                if (value == undefined) {
+                    logger.debug('Get books from MongoDB');
+                    var query = {};
+                    if (req.query.genre) {
+                        query.genre = req.query.genre;
+                    }
+                    if (req.query.read) {
+                        query.read = req.query.read;
+                    }
 
-        Book.find(query, function (err, books) {
-            if (err)
-                res.status(500).send(err);
-            else {
-                var returnBooks = [];
-                books.forEach(function (element, index, array) {
-                    var newBook = element.toJSON();
-                    newBook.links = {};
-                    newBook.links.self = 'http://' + req.headers.host + '/api/books/' + newBook._id;
-                    returnBooks.push(newBook);
-                })
+                    Book.find(query, function (err, books) {
+                        if (err)
+                            res.status(500).send(err);
+                        else {
+                            var returnBooks = [];
+                            books.forEach(function (element, index, array) {
+                                var newBook = element.toJSON();
+                                newBook.links = {};
+                                newBook.links.self = 'http://' + req.headers.host + '/api/books/' + newBook._id;
+                                returnBooks.push(newBook);
+                            })
 
-                res.json(returnBooks);
+                            //Set in cache
+                            cache.set(cacheKey, returnBooks, function (err, success) {
+                                if (!err && success) {
+                                    logger.info("Books are now cached thanks to node-cache!");
+                                }
+                            });
+
+                            res.json(returnBooks);
+                        }
+                    })
+                } else {
+                    logger.debug('Books retrieved from cache');
+                    res.json(value);
+                }
             }
-        })
+            else {
+                res.status(500).send(err);
+            }
+        });
     };
 
     var getById = function (req, res) {
